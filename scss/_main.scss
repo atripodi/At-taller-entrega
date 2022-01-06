@@ -1,0 +1,88 @@
+
+.main{
+    #sec1{
+        & #img-izq{
+            width: 100%;
+            height: 500px;
+            background-image: url(/imagenes/ceramica4.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 80%;
+            padding-top: 80px;
+            & #boton1{
+                font-size: 20px;
+                color: $color3;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        & #img-der{
+            width: 100%;
+            height: 500px;
+            background-image: url(/imagenes/img-taller.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            & #boton2{
+                font-size: 20px;
+                color: $color3;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+#sec2 {
+    border-top: 1px solid $color1;
+    border-bottom: 1px solid $color1;
+    & p {
+        text-align:right;
+        font-size: 14px;
+        padding-top: 41.5px;
+        padding-bottom: 41.5px;
+        margin-bottom: 0px !important;
+        /* padding-right: 18px; */
+        & a {
+            text-decoration: underline;
+            color: $color1;
+        }
+    }
+}
+
+/* estilos section form */
+
+#sec3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    & p {
+        font-size: 14px;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    & .form-inline {
+        color: $color1;
+        font-size: 14px !important;
+        justify-content: center !important;
+        padding-top: 10px;
+        & .form-control-sm{
+            border-bottom: $color1  solid 1px !important;
+        }
+        & .btn {
+            color: $color1;
+            text-decoration: none;
+            font-size: 14px;
+            border: $color1 solid 1px !important;
+        }
+    }
+}
+
+
+
+
+
+
