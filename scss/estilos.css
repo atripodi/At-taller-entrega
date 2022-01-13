@@ -25,7 +25,7 @@
   color: #bfb8ae !important;
 }
 
-.main #sec1 #img-izq {
+#sec1 #img-izq {
   width: 100%;
   height: 500px;
   background-image: url(/imagenes/ceramica4.jpeg);
@@ -35,17 +35,11 @@
   padding-top: 80px;
 }
 
-.main #sec1 #img-izq #boton1 {
+#sec1 #img-izq #btn1, #sec1 #img-izq #img-der #btn2, #sec1 #img-der #img-izq #btn2 {
   font-size: 20px;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
-.main #sec1 #img-der {
+#sec1 #img-der {
   width: 100%;
   height: 500px;
   background-image: url(/imagenes/img-taller.jpeg);
@@ -54,8 +48,11 @@
   background-size: cover;
 }
 
-.main #sec1 #img-der #boton2 {
+#sec1 #img-der #btn2 {
   font-size: 20px;
+}
+
+#btn1, #sec1 #img-der #btn2 {
   color: white;
   position: absolute;
   top: 50%;
@@ -140,19 +137,6 @@ footer ul li a:hover {
   text-decoration: none;
 }
 
-* {
-  padding: 0px;
-  margin: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* estilos page shop */
 #main-shop {
   width: 100%;
   height: 100%;
@@ -280,137 +264,15 @@ html {
   background-position: bottom;
 }
 
-/* estilos page about */
-#main-about p {
-  font-size: 13px;
-  height: 200px;
-  text-align: center;
-  padding: 30px 30px;
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
-#img-taller {
-  background-image: url(/imagenes/taller1.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 90%;
-  height: 500px;
-}
-
-@media screen and (min-width: 768px) {
-  /* estilos page shop */
-  .galeria {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
-    /* column-gap: 10px; */
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
-    width: 100%;
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
-  }
-  .items {
-    /* border: #000 2px solid; */
-    height: 455px;
-    width: 300;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  /* estilos index */
-  article {
-    /* border: 2px solid black; */
-    height: 700px;
-  }
-  #img-izq {
-    width: 100%;
-    height: 700px;
-    /* background-color: violet; */
-    background-image: url(/imagenes/ceramica4.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    padding-top: 80px;
-  }
-  #img-der {
-    width: 100%;
-    height: 700px;
-    background-image: url(/imagenes/img-taller.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #boton1 {
-    font-size: 25px;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  #boton2 {
-    font-size: 25px;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  #sec3 p {
-    font-size: 16px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 0;
-  }
-  /* estilos page shop */
-  .galeria {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 10px;
-    /* column-gap: 10px; */
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
-    width: 100%;
-    /* padding-top: 10px;
-        padding-bottom: 10px; */
-  }
-  .items {
-    /* border: #000 2px solid; */
-    height: 455px;
-    width: 300;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  /* estilos page about */
-  #img-taller {
-    background-image: url(/imagenes/taller1.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 90%;
-    height: 600px;
-  }
+html {
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=estilos.css.map */
