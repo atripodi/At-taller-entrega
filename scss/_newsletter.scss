@@ -1,0 +1,31 @@
+/* estilos form */
+
+.form-newsletter{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    & p {
+        font-size: map-get($font-size, small);
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    & .form-inline {
+        color: $color1;
+        font-size: map-get($font-size, small) !important;
+        justify-content: center !important;
+        padding-top: 10px;
+        & .form-control-sm{
+            border-bottom: $color1  solid 1px !important;
+        }
+        & .btn {
+            color: $color1;
+            text-decoration: none;
+            font-size: map-get($font-size, small); 
+            border: $color1 solid 1px !important;
+        }
+    }
+}
+
+
+
+
+

@@ -1,4 +1,4 @@
-// inicio estilos page index
+// inicio estilos page main index
 
 //  mixin background
 
@@ -12,31 +12,38 @@
 
 $font-size: (
     small: 14px, 
-    medium: 20px,
+    medium: 16px,
     large: 25px);
-
-// estilos main page index
 
 #sec1{
     #img-izq{
         width: 100%;
         height: 500px;
-        background-image: url(/imagenes/ceramica4.jpeg);
+        background-image: url(../imagenes/ceramica4.jpeg);
         @include bg (center, no-repeat, 80%);
         padding-top: 80px;
         & #btn1 {
             font-size: map-get($font-size, medium); // font-size 20px
+            @extend #btn1 ;
         }
     }
     & #img-der{
         width: 100%;
         height: 500px;
-        background-image: url(/imagenes/img-taller.jpeg);
+        background-image: url(../imagenes/img-taller.jpeg);
         @include bg (center, no-repeat, cover);
         & #btn2 {
             font-size: map-get($font-size, medium); // font-size 20px
-            // background-color: violet;
             @extend #btn1 ;
+        }
+    }
+    @media screen and (min-width: 1024px){
+        #img-izq{
+            height: 700px;
+            @include bg (center, no-repeat, 60%);
+        }
+        #img-der{
+            height: 700px;
         }
     }
 }
@@ -47,6 +54,9 @@ $font-size: (
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media screen and (min-width: 1024px){
+        font-size: map-get($font-size, large);
+    }
 }
 
 #sec2 {
@@ -59,6 +69,9 @@ $font-size: (
         padding-bottom: 41.5px;
         margin-bottom: 0px !important;
         /* padding-right: 18px; */
+        @media screen and (min-width: 1024px){
+            font-size: map-get($font-size, medium);
+        }
         & a {
             text-decoration: underline;
             color: $color1;
@@ -66,34 +79,9 @@ $font-size: (
     }
 }
 
-/* estilos section form */
+// fin estilos page main index
 
-#sec3{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    & p {
-        font-size: map-get($font-size, small);
-        justify-content: center;
-        margin-bottom: 0;
-    }
-    & .form-inline {
-        color: $color1;
-        font-size: map-get($font-size, small) !important;
-        justify-content: center !important;
-        padding-top: 10px;
-        & .form-control-sm{
-            border-bottom: $color1  solid 1px !important;
-        }
-        & .btn {
-            color: $color1;
-            text-decoration: none;
-            font-size: map-get($font-size, small); 
-            border: $color1 solid 1px !important;
-        }
-    }
-}
-
-// fin estilos page main 
+// inicio estilos page main about
 
 
 

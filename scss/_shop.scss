@@ -2,63 +2,61 @@
     width: 100%;
     height: 100%;
     border-bottom: 1px solid #000;
-    /* background-color: red; */
-}
-
-.galeria{
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
-    align-items: center;
-    justify-items: center;
-    /* background-color: red; */
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.items{
-    /* border: #000 2px solid; */
-    height: 455px;
-    width: 300;
-    display: flex;
-    flex-direction: column;
-} 
-
-.product-img{
-    /* background-color: rgb(112, 109, 106); */
-    height: 400px;
-    width: 300px;
-} 
-
-
-.product-name{
-    /* background-color: violet; */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 300px;
-    height: 55px;
-    padding: 10px 10px;
-    color:#000;
-}
-
-.product-name h5{
-    font-size: 13px;
-}
-
-.product-name a {
-    color: black;
-    text-decoration: none;    
-}
-
-.product-name h5:hover a{
-    color:#bfb8ae;
-}
-
-.price{
-    font-size: 13px;
+    & .galeria { 
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        & .items {
+            height: 455px;
+            width: 300;
+            display: flex;
+            flex-direction: column;
+            & .product-img{
+                height: 400px;
+                width: 300px;
+            }
+            & .product-name{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 300px;
+                height: 55px;
+                padding: 10px 10px;
+                color:#000; 
+                & h5{
+                    font-size: 13px;
+                    & a{
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+                :hover a{
+                    color:#bfb8ae;
+                }
+                .price{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .galeria{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        .galeria{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
 }
 
 // inicio mixin
@@ -69,48 +67,44 @@
 }
 
 #item-img1{
-    background-image: url(/imagenes/item1.jpeg);
-    @include bg(cover,center)
+    background-image: url(../imagenes/item1.jpeg);
+    @include bg(cover,center);
+
 }
 
 #item-img2{
-    background-image: url(/imagenes/item2.jpeg);
-    background-size: cover;
-    background-position: bottom;
+    background-image: url(../imagenes/item2.jpeg);
+    @include bg(cover,center);
 }
 
 #item-img3{
-    background-image: url(/imagenes/item3.jpeg);
-    background-size: cover;
-    background-position: bottom;
+    background-image: url(../imagenes/item3.jpeg);
+    @include bg(cover,center);
 }
 
 #item-img4{
-    background-image: url(/imagenes/item4.jpeg);
-    background-size: cover;
-    background-position: bottom;
+    background-image: url(../imagenes/item4.jpeg);
+    @include bg(cover,center);
 }
 
 #item-img5{
-    background-image: url(/imagenes/item5.jpeg);
-    background-size: cover;
-    background-position: bottom;
+    background-image: url(../imagenes/item5.jpeg);
+    @include bg(cover,center);
 }
 
 #item-img6{
-    background-image: url(/imagenes/item6.jpeg);
-    background-size: cover;
-    background-position: bottom;
+    background-image: url(../imagenes/item6.jpeg);
+    @include bg(cover,center);
 }
 
 #item-img7{
-    background-image: url(/imagenes/item7.jpeg);
-    background-size: cover;
-    background-position: bottom;
+    background-image: url(../imagenes/item7.jpeg);
+    @include bg(cover,center);
 }
 
 #item-img8{
-    background-image: url(/imagenes/imagen1.jpeg);
-    background-size: cover;
-    background-position: bottom;
+    background-image: url(../imagenes/imagen1.jpeg);
+    @include bg(cover,center);
 }
+
+
