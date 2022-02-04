@@ -32,7 +32,7 @@
                     <a class="nav-link" href="./contact.html">CONTACT</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="./newsletter.html">NEWSLETTER</a>
+                    <a class="nav-link" href="#form-newsletter">NEWSLETTER</a>
                     </li>
                 </ul>
                 </div>
@@ -40,12 +40,34 @@
     </header>
     <!-- fin header -->
     <!-- inicio main -->
-    <main class="container-fluid" id="main-about">
-        <div class="row">
-            <p class="col-sm-12 col-md-6 col-lg-6" id="texto1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quibusdam accusamus sapiente recusandae dicta facilis, similique vel minima perspiciatis error sequi eveniet repellendus necessitatibus, provident voluptatem fuga nisi expedita ex!
-            </p>
-            <div class="col-sm-12 col-md-6 col-lg-6" id="img-taller"></div>
+    <main>
+        <!-- inicio breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About</li>
+            </ol>
+        </nav>
+        <div class="container">
+            <div class="row justify-content-center">
+                <p class="col-sm-12 col-md-6 col-lg-6" id="text-about">
+                    En nuestro taller aspiramos a lograr objetos auténticos y atemporales. <br><br>Creemos en la producción artesanal y consciente, siendo cada una de nuestras piezas realizada enteramente a mano, lo cual las hace únicas y limitadas. <br><br> Nos inspira el minimalismo y la simpleza de los objetos utilitarios que nos acompañan día a día. <br><br> Te invitamos a conocerlos desde <a href="./shop.html">aquí. </a>
+                </p>
+                <div class="col-sm-12 col-md-6 col-lg-6" id="img-taller"></div>
+            </div>
         </div>
+        <!-- inicio sección newsletter -->
+        <section class="container-fluid form-newsletter" id="form-newsletter">
+            <p class="row no-gutters"><strong>Suscribite al newsletter para recibir novedades</strong></p>
+            <!-- inicio formulario -->
+            <form class="form-inline" action="/action_page.php">
+                <label for="email" class="mr-sm-2">Email</label>
+                <input type="email" class="form-control-sm mb-2 mr-sm-2 border-0 rounded-0"  id="email">
+                <button type="submit" class="btn border-0 rounded-0 mb-2">Enviar</button>
+            </form>
+            <!-- fin formulario -->
+        </section>
+        <!-- fin sección newsletter -->
     </main>
     <!-- fin main -->
     <!-- inicio footer -->

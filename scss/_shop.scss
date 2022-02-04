@@ -1,33 +1,42 @@
 #main-shop{
     width: 100%;
     height: 100%;
-    border-bottom: 1px solid #000;
     & .galeria { 
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: 10px;
+        row-gap: 20px;
         column-gap: 10px;
         align-items: center;
         justify-items: center;
         width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         & .items {
-            height: 455px;
             width: 300;
             display: flex;
             flex-direction: column;
             & .product-img{
                 height: 400px;
                 width: 300px;
+                overflow: hidden;
+                object-position:center;
+                & img{
+                    height: 400px;
+                    width: 300px;
+                    transition: transform .5s ease;
+                }
+                :hover img {
+                    transform: scale(1.3);
+                }
             }
             & .product-name{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 width: 300px;
-                height: 55px;
-                padding: 10px 10px;
+                height: 35px;
+                padding-top: 10px;
+                padding-left: 10px;
                 color:#000; 
                 & h5{
                     font-size: 13px;
@@ -39,8 +48,35 @@
                 :hover a{
                     color:#bfb8ae;
                 }
+            }
+            & .description{
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                font-size: 12px;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            & .product-price {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 300px;
+                height: 50px;
+                padding: 10px 10px;
                 .price{
-                    font-size: 13px;
+                    font-size: map-get($font-size, small);
+                    text-align: center;
+                    border: #000 solid 1px;
+                    width: 50%;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+                .btn {
+                    font-size: map-get($font-size, small);
+                    border: #000 solid 1px;
+                    width: 50%;
                 }
             }
         }
@@ -58,53 +94,3 @@
         }
     }
 }
-
-// inicio mixin
-
-@mixin bg ($background-size, $background-position){
-    background-size: $background-size;
-    background-position: $background-position;
-}
-
-#item-img1{
-    background-image: url(../imagenes/item1.jpeg);
-    @include bg(cover,center);
-
-}
-
-#item-img2{
-    background-image: url(../imagenes/item2.jpeg);
-    @include bg(cover,center);
-}
-
-#item-img3{
-    background-image: url(../imagenes/item3.jpeg);
-    @include bg(cover,center);
-}
-
-#item-img4{
-    background-image: url(../imagenes/item4.jpeg);
-    @include bg(cover,center);
-}
-
-#item-img5{
-    background-image: url(../imagenes/item5.jpeg);
-    @include bg(cover,center);
-}
-
-#item-img6{
-    background-image: url(../imagenes/item6.jpeg);
-    @include bg(cover,center);
-}
-
-#item-img7{
-    background-image: url(../imagenes/item7.jpeg);
-    @include bg(cover,center);
-}
-
-#item-img8{
-    background-image: url(../imagenes/imagen1.jpeg);
-    @include bg(cover,center);
-}
-
-

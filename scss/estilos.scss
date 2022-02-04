@@ -4,6 +4,9 @@
 @import "footer";
 @import "shop";
 @import "newsletter";
+@import "contact";
+@import "about";
+@import "breadcrumb";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
 
@@ -18,3 +21,7 @@ html{
     scroll-behavior: smooth;
 }
 
+::selection { 
+    background: #000; 
+    color:#fff; 
+}

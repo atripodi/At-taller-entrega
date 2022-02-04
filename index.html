@@ -11,9 +11,9 @@
     <!-- Links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./scss/estilos.css">
-
 </head>
-<!-- <body> -->
+<body>
+    <!-- inicio header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.html">AT TALLER</a>
@@ -35,33 +35,99 @@
                     <a class="nav-link" href="./pages/contact.html">CONTACT</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#sec3">NEWSLETTER</a>
+                    <a class="nav-link" href="#form-newsletter">NEWSLETTER</a>
                     </li>
                 </ul>
                 </div>
         </nav>
     </header>
+    <!-- fin header -->
     <!-- inicio main -->
-    <main class="container-fluid">
-        <section class="row" id="sec1">
-            <article id="img-izq" class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                <a href="./pages/shop.html">
-                    <div class="boton1" id="btn1" >SHOP CERAMICAS</div>
-                </a>
-            </article>
-            <article id="img-der" class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                <a href="./pages/shop.html">
-                    <div class="boton2" id="btn2">SHOP ENMARCADOS</div>
-                </a>
-            </article>
-        </section>
-        <section class="row" id="sec2">
-            <p class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">Taller de objetos artesanales ubicado en Buenos Aires.
-                <a href="./pages/about.html">Conocé más</a>
-            </p> 
-        </section> 
-        <section class="container form-newsletter" id="sec3">
-            <p class="row"><strong>Suscribite al newsletter para recibir novedades</strong></p>
+    <main>
+        <!-- inicio carrousel -->
+        <div id="carousel-index" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagenes/CarrouselPrueba1.jpeg" class="d-block w-100" alt="Pieza de cerámica">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/CarrouselPrueba2.jpeg" class="d-block w-100" alt="Pieza de cerámica">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/ceramica2.jpeg" class="d-block w-100" alt="Pieza de cerámica">
+                </div>
+            </div>
+        </div>
+        <!-- fin carrousel --> 
+        <div class="container-fluid secciones1-2-3">
+            <section class="row no-gutters" id="sec1">
+                <p class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">Taller de objetos artesanales ubicado en Buenos Aires.
+                    <a href="./pages/about.html">Conocé más</a>
+                </p> 
+            </section>
+            <section class="row no-gutters" id="sec2">
+                <article id="img-izq" class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <a href="./pages/shop.html">
+                        <div class="boton1" id="btn1" >SHOP ENMARCADOS<div>
+                    </a>
+                </article>
+                <article id="img-der" class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <a href="./pages/shop.html">
+                        <div class="boton2" id="btn2">SHOP CERÁMICAS</div>
+                    </a>
+                </article>
+            </section>
+        </div>
+
+        <!-- inicio sección items favoritos/destacados -->
+        <div class="container-fluid items-favoritos">
+            <div class="row no-gutters">
+                <div class="col-md-6" id="cuadricula">
+                    <div class="row no-gutters">
+                        <div class="titulo col-md-6">
+                            <h3><strong>NUESTROS PRODUCTOS FAVORITOS</strong></h3>
+                            <p>OBJETOS DE USO DIARIO</p>
+                        </div>
+                        <div class="item-destacado col-md-6">
+                            <div class="product-img"> 
+                                <a href="./pages/shop.html"><img src="../imagenes/item1.jpeg" alt="taza cerámica"></a>
+                            </div>
+                            <div class="product-name">
+                                <h5><a href="./pages/shop.html">Taza serie 001</a></h5>
+                            </div>
+                        </div>
+                        <div class="item-destacado col-md-6">
+                            <div class="product-img"> 
+                                <a href="./pages/shop.html"><img src="../imagenes/item2.jpeg" alt="jarra cerámica"></a>
+                            </div>
+                            <div class="product-name">
+                                <h5><a href="./pages/shop.html">Jarra serie 001</a></h5>
+                            </div>
+                        </div>
+                        <div class="item-destacado col-md-6">
+                            <div class="product-img"> 
+                                <a href="./pages/shop.html"><img src="../imagenes/item4.jpeg" alt="pieza cerámica"></a>
+                            </div>
+                            <div class="product-name">
+                                <h5><a href="./pages/shop.html">Florero serie 001</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-destacado col-md-6" id="item-lg">
+                    <div class="product-img"> 
+                        <a href="./pages/shop.html"><img src="../imagenes/CarrouselPrueba3.jpeg" alt="taza cerámica"></a>
+                    </div>
+                    <div class="product-name">
+                        <h5><a href="./pages/shop.html">Vela serie 001</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- inicio sección newsletter -->
+        <section class="container-fluid form-newsletter" id="form-newsletter">
+            <p class="row no-gutters"><strong>Suscribite al newsletter para recibir novedades</strong></p>
             <!-- inicio formulario -->
             <form class="form-inline" action="/action_page.php">
                 <label for="email" class="mr-sm-2">Email</label>
@@ -70,6 +136,7 @@
             </form>
             <!-- fin formulario -->
         </section>
+        <!-- fin sección newsletter -->
     </main>
     <!-- fin main -->
     <!-- inicio footer -->

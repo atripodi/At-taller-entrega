@@ -32,7 +32,7 @@
                     <a class="nav-link" href="./contact.html">CONTACT</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="./newsletter.html">NEWSLETTER</a>
+                    <a class="nav-link" href="#form-newsletter">NEWSLETTER</a>
                     </li>
                 </ul>
                 </div>
@@ -41,14 +41,58 @@
     <!-- fin header -->
     <!-- inicio main -->
     <main id="main-contact">
-        <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
-            <h2>CONTACTO</h2>
-            Nombre y apellido <input type="text" required> <br>
-            Teléfono de contacto <input type="text" required><br>
-            Email <input type="email" required><br>
-            Mensaje <input type="text" required placeholder="Inserte su comentario">
-            <input type="submit" value="Enviar">
-        </form>
+        <!-- inicio breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            </ol>
+        </nav>
+        <!-- fin breadcrumb -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="col-md-12" id="datos-contacto">
+                        <p>Estamos ubicados en San Miguel, Buenos Aires. <br> Podés contactarnos a través de nuestro teléfono 12345678, el correo info@at-taller.com o completando el siguiente formulario:</p>
+                    </div>
+                    <div class="col-md-12" id="form-contacto">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Nombre:</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Email:</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Teléfono:</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-dark border-0 rounded-0">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6" id="imagen-contacto">
+                </div>
+            </div>
+        </div>
+        <!-- inicio sección newsletter -->
+        <section class="container-fluid form-newsletter" id="form-newsletter">
+            <p class="row no-gutters"><strong>Suscribite al newsletter para recibir novedades</strong></p>
+            <!-- inicio formulario -->
+            <form class="form-inline" action="/action_page.php">
+                <label for="email" class="mr-sm-2">Email</label>
+                <input type="email" class="form-control-sm mb-2 mr-sm-2 border-0 rounded-0"  id="email">
+                <button type="submit" class="btn border-0 rounded-0 mb-2">Enviar</button>
+            </form>
+            <!-- fin formulario -->
+        </section>
+        <!-- fin sección newsletter -->
     </main>
     <!-- fin main -->
     <!-- inicio footer -->

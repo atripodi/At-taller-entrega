@@ -1,8 +1,7 @@
 footer{
+    // background-color: violet;
     height:60px;
-    font-weight: 100%;
-    /* background-color:#d9d9d9; */
-    border-top: $color1 solid 1px;
+    border-top: #000 solid 1px;
     & ul li{
         font-size: 12px;
         display: inline-block;

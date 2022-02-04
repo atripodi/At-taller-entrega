@@ -2,7 +2,6 @@
 .navbar {
   background-color: white !important;
   border-bottom: 2px solid #000;
-  height: 80px;
 }
 
 .navbar .navbar-brand {
@@ -25,46 +24,59 @@
   color: #bfb8ae !important;
 }
 
-#sec1 #img-izq {
-  width: 100%;
-  height: 500px;
-  background-image: url(../imagenes/ceramica4.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  padding-top: 80px;
+#carousel-index {
+  height: 170px;
 }
 
-#sec1 #img-izq #btn1, #sec1 #img-izq #img-der #btn2, #sec1 #img-der #img-izq #btn2 {
-  font-size: 16px;
+#carousel-index .carousel-item {
+  height: 170px;
 }
 
-#sec1 #img-der {
-  width: 100%;
-  height: 500px;
+.secciones1-2-3 {
+  padding: 0px;
+}
+
+.secciones1-2-3 #sec1 p {
+  width: auto;
+  text-align: right;
+  font-size: 14px;
+  padding-top: 41.5px;
+  padding-bottom: 41.5px;
+  margin-bottom: 0px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.secciones1-2-3 #sec1 p a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.secciones1-2-3 #sec2 #img-izq {
+  height: 400px;
   background-image: url(../imagenes/img-taller.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#sec1 #img-der #btn2 {
+.secciones1-2-3 #sec2 #img-izq a {
+  color: white;
+}
+
+.secciones1-2-3 #sec2 #img-der {
+  height: 400px;
+  background-image: url(../imagenes/ceramica4v2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.secciones1-2-3 #sec2 #img-der #btn2 {
   font-size: 16px;
 }
 
-@media screen and (min-width: 1024px) {
-  #sec1 #img-izq {
-    height: 700px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 60%;
-  }
-  #sec1 #img-der {
-    height: 700px;
-  }
-}
-
-#btn1, #sec1 #img-izq #btn1, #sec1 #img-der #btn2 {
+#btn1, .secciones1-2-3 #sec2 #img-izq a .boton1, .secciones1-2-3 #sec2 #img-der #btn2 {
   color: white;
   position: absolute;
   top: 50%;
@@ -73,41 +85,236 @@
           transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 1024px) {
-  #btn1, #sec1 #img-izq #btn1, #sec1 #img-der #btn2 {
-    font-size: 25px;
+.items-favoritos {
+  padding: 0px;
+}
+
+.items-favoritos #cuadricula {
+  margin: 10px 10px 0px 10px;
+}
+
+.items-favoritos #cuadricula .titulo h3 {
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.items-favoritos #cuadricula .titulo p {
+  font-size: 12px;
+  text-align: right;
+}
+
+.items-favoritos .item-destacado {
+  height: 450px;
+  padding: 0px;
+}
+
+.items-favoritos .item-destacado .product-img {
+  height: 400px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.items-favoritos .item-destacado .product-img img {
+  height: 400px;
+  width: 300px;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.items-favoritos .item-destacado .product-img :hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.items-favoritos .item-destacado .product-name {
+  height: 50px;
+  width: 300px;
+}
+
+.items-favoritos .item-destacado .product-name h5 {
+  font-size: 14px;
+  text-align: start;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.items-favoritos .item-destacado .product-name h5 a {
+  color: black;
+  text-decoration: none;
+}
+
+.items-favoritos .item-destacado .product-name :hover a {
+  color: #bfb8ae;
+}
+
+.items-favoritos #item-lg {
+  margin: 0px 10px 0px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  #carousel-index {
+    height: 400px;
+  }
+  #carousel-index .carousel-item {
+    height: 400px;
+  }
+  .items-favoritos {
+    padding: 0px;
+  }
+  .items-favoritos #cuadricula {
+    margin: 0px;
+  }
+  .items-favoritos #cuadricula .titulo {
+    padding: 0px 10px 0px 10px;
+  }
+  .items-favoritos .item-destacado {
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  .items-favoritos .item-destacado .product-img {
+    height: 250px;
+    width: 192px;
+  }
+  .items-favoritos .item-destacado .product-img img {
+    height: 250px;
+    width: 192px;
+  }
+  .items-favoritos .item-destacado .product-name {
+    height: 50px;
+    width: 192px;
+  }
+  .items-favoritos #item-lg {
+    height: auto;
+    margin: 0px 0px 10px 0px;
+  }
+  .items-favoritos #item-lg .product-img {
+    height: 560px;
+    width: 384px;
+  }
+  .items-favoritos #item-lg .product-img img {
+    height: 560px;
+    width: 384px;
+  }
+  .items-favoritos #item-lg .product-name {
+    width: 384px;
   }
 }
 
-#sec2 {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-}
-
-#sec2 p {
-  text-align: right;
-  font-size: 14px;
-  padding-top: 41.5px;
-  padding-bottom: 41.5px;
-  margin-bottom: 0px !important;
-  /* padding-right: 18px; */
-}
-
 @media screen and (min-width: 1024px) {
-  #sec2 p {
+  #carousel-index {
+    height: 540px;
+  }
+  #carousel-index .carousel-item {
+    height: 540px;
+  }
+  .secciones1-2-3 #sec1 p {
     font-size: 16px;
   }
+  .secciones1-2-3 #sec2 #img-izq {
+    height: 500px;
+  }
+  .secciones1-2-3 #sec2 #img-izq .boton1 {
+    font-size: 22px;
+  }
+  .secciones1-2-3 #sec2 #img-der {
+    height: 500px;
+  }
+  .secciones1-2-3 #sec2 #img-der #btn2 {
+    font-size: 22px;
+  }
+  .items-favoritos #cuadricula .titulo h3 {
+    font-size: 16px;
+  }
+  .items-favoritos #cuadricula .titulo p {
+    font-size: 14px;
+  }
+  .items-favoritos .item-destacado {
+    height: 400px;
+  }
+  .items-favoritos .item-destacado .product-img {
+    height: 350px;
+    width: 256px;
+  }
+  .items-favoritos .item-destacado .product-img img {
+    height: 350px;
+    width: 256px;
+  }
+  .items-favoritos .item-destacado .product-name {
+    height: 50px;
+    width: 256px;
+  }
+  .items-favoritos #item-lg {
+    height: auto;
+  }
+  .items-favoritos #item-lg .product-img {
+    height: 760px;
+    width: 512px;
+  }
+  .items-favoritos #item-lg .product-img img {
+    height: 760px;
+    width: 512px;
+  }
+  .items-favoritos #item-lg .product-name {
+    width: 512px;
+  }
 }
 
-#sec2 p a {
-  text-decoration: underline;
-  color: #000;
+@media screen and (min-width: 1044px) {
+  #carousel-index {
+    height: 750px;
+  }
+  #carousel-index .carousel-item {
+    height: 750px;
+  }
+  .secciones1-2-3 #sec2 #img-izq {
+    height: 600px;
+  }
+  .secciones1-2-3 #sec2 #img-izq .boton1 {
+    font-size: 25px;
+  }
+  .secciones1-2-3 #sec2 #img-der {
+    height: 600px;
+  }
+  .secciones1-2-3 #sec2 #img-der #btn2 {
+    font-size: 25px;
+  }
+  .items-favoritos .item-destacado {
+    height: auto;
+  }
+  .items-favoritos .item-destacado .product-img {
+    height: 460px;
+    width: 360px;
+  }
+  .items-favoritos .item-destacado .product-img img {
+    height: 460px;
+    width: 360px;
+  }
+  .items-favoritos .item-destacado .product-name {
+    height: 50px;
+    width: 360px;
+  }
+  .items-favoritos #item-lg {
+    height: auto;
+  }
+  .items-favoritos #item-lg .product-img {
+    height: 980px;
+    width: 720px;
+  }
+  .items-favoritos #item-lg .product-img img {
+    height: 980px;
+    width: 720px;
+  }
+  .items-favoritos #item-lg .product-name {
+    width: 720px;
+  }
 }
 
 footer {
   height: 60px;
-  font-weight: 100%;
-  /* background-color:#d9d9d9; */
   border-top: #000 solid 1px;
 }
 
@@ -130,7 +337,6 @@ footer ul li a:hover {
 #main-shop {
   width: 100%;
   height: 100%;
-  border-bottom: 1px solid #000;
 }
 
 #main-shop .galeria {
@@ -138,7 +344,7 @@ footer ul li a:hover {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  row-gap: 10px;
+  row-gap: 20px;
   -webkit-column-gap: 10px;
           column-gap: 10px;
   -webkit-box-align: center;
@@ -146,12 +352,11 @@ footer ul li a:hover {
           align-items: center;
   justify-items: center;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #main-shop .galeria .items {
-  height: 455px;
   width: 300;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,6 +370,23 @@ footer ul li a:hover {
 #main-shop .galeria .items .product-img {
   height: 400px;
   width: 300px;
+  overflow: hidden;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#main-shop .galeria .items .product-img img {
+  height: 400px;
+  width: 300px;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+#main-shop .galeria .items .product-img :hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 #main-shop .galeria .items .product-name {
@@ -179,8 +401,9 @@ footer ul li a:hover {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 300px;
-  height: 55px;
-  padding: 10px 10px;
+  height: 35px;
+  padding-top: 10px;
+  padding-left: 10px;
   color: #000;
 }
 
@@ -197,8 +420,52 @@ footer ul li a:hover {
   color: #bfb8ae;
 }
 
-#main-shop .galeria .items .product-name .price {
-  font-size: 13px;
+#main-shop .galeria .items .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  font-size: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#main-shop .galeria .items .product-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 50px;
+  padding: 10px 10px;
+}
+
+#main-shop .galeria .items .product-price .price {
+  font-size: 14px;
+  text-align: center;
+  border: #000 solid 1px;
+  width: 50%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#main-shop .galeria .items .product-price .btn {
+  font-size: 14px;
+  border: #000 solid 1px;
+  width: 50%;
 }
 
 @media screen and (min-width: 768px) {
@@ -219,66 +486,17 @@ footer ul li a:hover {
   }
 }
 
-#item-img1 {
-  background-image: url(../imagenes/item1.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-#item-img2 {
-  background-image: url(../imagenes/item2.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-#item-img3 {
-  background-image: url(../imagenes/item3.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-#item-img4 {
-  background-image: url(../imagenes/item4.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-#item-img5 {
-  background-image: url(../imagenes/item5.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-#item-img6 {
-  background-image: url(../imagenes/item6.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-#item-img7 {
-  background-image: url(../imagenes/item7.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-#item-img8 {
-  background-image: url(../imagenes/imagen1.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-/* estilos form */
 .form-newsletter {
+  border-top: 1px solid #000;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .form-newsletter p {
   font-size: 14px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 0;
+  width: 300px;
+  text-align: center;
 }
 
 .form-newsletter .form-inline {
@@ -290,6 +508,10 @@ footer ul li a:hover {
   padding-top: 10px;
 }
 
+.form-newsletter .form-inline .mr-sm-2 {
+  margin-right: 10px;
+}
+
 .form-newsletter .form-inline .form-control-sm {
   border-bottom: #000 solid 1px !important;
 }
@@ -299,6 +521,116 @@ footer ul li a:hover {
   text-decoration: none;
   font-size: 14px;
   border: #000 solid 1px !important;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .form-newsletter p {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#main-contact .container {
+  padding-bottom: 16px;
+}
+
+#main-contact .container p {
+  font-size: 14px;
+}
+
+#main-contact .container #form-contacto {
+  font-size: 14px;
+  height: 450px;
+}
+
+#main-contact .container #form-contacto .btn {
+  font-size: 14px;
+}
+
+#main-contact .container #imagen-contacto {
+  background-image: url(../imagenes/taller1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 288px;
+}
+
+@media screen and (min-width: 768px) {
+  #main-contact .container p {
+    padding-bottom: 0px;
+  }
+  #main-contact .container #imagen-contacto {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #main-contact .container #imagen-contacto {
+    height: 600px;
+    margin-bottom: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+  }
+}
+
+.container {
+  padding-bottom: 16px;
+}
+
+.container .row p {
+  font-size: 14px;
+  padding-bottom: 45px;
+}
+
+.container .row p a {
+  color: black;
+  text-decoration: underline;
+}
+
+.container .row #img-taller {
+  background-image: url(../imagenes/taller2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 288px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-bottom: 45px;
+  }
+  .container .row #img-taller {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .row #img-taller {
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+  }
+}
+
+.breadcrumb {
+  font-size: 14px;
+  background-color: white;
+}
+
+.breadcrumb .breadcrumb-item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.breadcrumb :hover a {
+  color: #bfb8ae;
 }
 
 * {
@@ -311,5 +643,15 @@ footer ul li a:hover {
 
 html {
   scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
 }
 /*# sourceMappingURL=estilos.css.map */
