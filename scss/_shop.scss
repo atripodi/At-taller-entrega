@@ -12,7 +12,7 @@
         padding-top: 20px;
         padding-bottom: 20px;
         & .items {
-            width: 300;
+            width: 300px;
             display: flex;
             flex-direction: column;
             & .product-img{
@@ -88,6 +88,12 @@
         }
     }
     @media screen and (min-width: 1024px) {
+        .galeria{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    @media screen and (min-width: 1440px) {
         .galeria{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
