@@ -481,7 +481,7 @@ footer ul li a:hover {
 }
 
 #main-shop .galeria .items .product-price .price {
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   border: #000 solid 1px;
   width: 50%;
@@ -490,7 +490,7 @@ footer ul li a:hover {
 }
 
 #main-shop .galeria .items .product-price .btn {
-  font-size: 14px;
+  font-size: 12px;
   border: #000 solid 1px;
   width: 50%;
 }
@@ -667,6 +667,32 @@ footer ul li a:hover {
 
 .breadcrumb :hover a {
   color: #bfb8ae;
+}
+
+.modal-contenedor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
 }
 
 * {
