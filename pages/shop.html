@@ -36,7 +36,7 @@
                         <a class="nav-link" href="#form-newsletter">NEWSLETTER</a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn" id="carrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="btn" id="carrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i></button>
                     </li>
                 </ul>
         </nav>
@@ -228,7 +228,7 @@
         </section>
 
         <!-- modal-->
-        <div class="modal modal-contenedor">
+        <!-- <div class="modal modal-contenedor">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <h5 class="modal-title">Carrito</h5>
@@ -246,8 +246,20 @@
                 </div>
             </div>
         </div>
-        
+        -->
         <!-- fin modal-->
+
+        <!-- offcanvas carrito -->
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Carrito de compras</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+            </div>
+        </div>
+
 
         <!-- inicio sección newsletter -->
         <section class="container-fluid form-newsletter" id="form-newsletter">

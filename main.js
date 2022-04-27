@@ -19,22 +19,23 @@ const productos = [
         cantidad:1
     }
 ]
+// modal --> lo reemplazo por offcanvas
 
 // abrir carrito
 
-const abrirCarrito = document.getElementById('carrito');
-const modalContenedor = document.querySelector('.modal-contenedor');
+// const abrirCarrito = document.getElementById('carrito');
+// const modalContenedor = document.querySelector('.modal-contenedor');
 
-abrirCarrito.addEventListener('click', () => {
-    modalContenedor.classList.toggle('modal-active');
-})
+// abrirCarrito.addEventListener('click', () => {
+//     modalContenedor.classList.toggle('modal-active');
+// })
 
-//cerrar carrito
+// //cerrar carrito
 
-const cerrarCarrito = document.querySelector('.close');  
-cerrarCarrito.addEventListener('click', () => {
-    modalContenedor.classList.toggle('modal-active');
-})
+// const cerrarCarrito = document.querySelector('.close');  
+// cerrarCarrito.addEventListener('click', () => {
+//     modalContenedor.classList.toggle('modal-active');
+// })
 
 
 //agregar item al carrito
