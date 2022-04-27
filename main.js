@@ -41,8 +41,16 @@ const productos = [
 //agregar item al carrito
 
 const botonAgregarAlCarrito = document.getElementById("agregar1");
-botonAgregarAlCarrito.onclick = () => { alert ("Agregaste este producto al carrito")};
+//botonAgregarAlCarrito.onclick = () => { alert ("Agregaste este producto al carrito")};
 
+
+botonAgregarAlCarrito.addEventListener ('click',() => { 
+    Swal.fire({
+        text: 'Agregaste este producto al carrito!',
+        icon: 'success',
+        confirmButtonText: 'Cerrar',
+    })
+});
 
 // detalle del carrito
 
