@@ -1,4 +1,6 @@
-// inventario de items
+// import { getData } from "./getData";
+
+// items
 
 const inventarioProductos = [
     // {
@@ -85,8 +87,9 @@ const inventarioProductos = [
 // Capturo el id "contenedor-productos" para mostrar dinámicamente todos los productos del array de artículos 
 
 const contenedorProductos = document.getElementById("contenedor-productos");
+// const productos = await getData () // retorna data 
 
-// Función para mostrar los productos: uso el método for each para acceder a cada elemento del array "inventarioProductos". Para cada producto creo un elemento 
+// Función para mostrar los productos: uso el método for each para acceder a cada elemento del array "inventarioProductos" en JS. Para cada producto creo un elemento 
 
 const mostrarProductos = (inventarioProductos) => {
     inventarioProductos.forEach(producto => {
@@ -110,12 +113,12 @@ const mostrarProductos = (inventarioProductos) => {
                     <button type="button" class="btn agregar-al-carrito btn-dark border-0 rounded-0" id="btn${producto.id}">Agregar al carrito</button>
                 </div>`
                 
-        contenedorProductos.appendChild(article)
+        contenedorProductos.appendChild(article) 
 
         const botonAgregarAlCarrito = document.getElementById(`btn${producto.id}`);
 
         botonAgregarAlCarrito.addEventListener("click", () => {
-            carritoOffcanvas(producto.id); // paso por parámetro el id de cada item: ej 1, 2, 3
+            carritoOffcanvas(producto.id); // paso por parámetro el id de cada item: ej 1, 2, 
             // console.log(producto.id);
             // console.log(producto.nombre);
             // console.log(producto.precio);
@@ -131,9 +134,8 @@ mostrarProductos(inventarioProductos); // incluyo como parámetro el array de ob
 let carritoDeCompras = []; // --> array vacío para almacenar los datos que obtengo con click
 
 const carritoOffcanvas = (productoId) => {
-
     let producto = inventarioProductos.find(producto => producto.id === productoId); // busco con find si hay una coincidencia en el array con el productoId que paso por parámetro (1, 2, 3)
-    producto.cantidad = 1; // inicializo la cantidad en 1
+    //producto.cantidad = 1; // inicializo la cantidad en 1
 
     carritoDeCompras.push(producto);
 
@@ -142,7 +144,7 @@ const carritoOffcanvas = (productoId) => {
     div.innerHTML = `<p>${producto.nombre}</p>
                     <p>Precio: $ ${producto.precio}</p>
                     <p id"cantidad${producto.id}"> Cantidad ${producto.cantidad}</p>
-                    <button id "eliminar${producto.id}" class ="btn-eliminar"><i class="fa-solid fa-circle-trash"></i></button>`;
+                    <button id "eliminar${producto.id}" class ="btn-eliminar"><i class="fa-solid fa-trash-can"></i></button>`;
 
     const bodyOffcanvas = document.querySelector(".offcanvas-body");
     bodyOffcanvas.appendChild(div);
@@ -151,14 +153,6 @@ const carritoOffcanvas = (productoId) => {
 carritoOffcanvas();
 
 
-/* next steps:
-- que al hacer click en el carrito muestre el mensaje de "carrito vacío" si no hay productos agregados
-- agregar btn de finalizar compra
-- aumentar/disminuir cantidad seleccionada
-- Filtrar productos desde el shop
-- agregar offcanvas al resto de las pages de HTML
-- agregar verificaciones en el form
-*/
 
 
 
